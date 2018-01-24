@@ -1,0 +1,8 @@
+drwxr-xr-x    2 1367     100          4096 Mar 31  2017 .
+drwxr-xr-x    7 1367     100          4096 Mar 31  2017 ..
+-rw-r--r--    1 1367     100          1089 Sep 22  2014 apc.class.php
+-rw-r--r--    1 1367     100           776 Sep 22  2014 eaccelerator.class.php
+-rw-r--r--    1 1367     100          1800 Sep 22  2014 memcache.class.php
+-rw-r--r--    1 1367     100          2465 Sep 22  2014 redis.class.php
+-rw-r--r--    1 1367     100          1081 Sep 22  2014 wincache.class.php
+-rw-r--r--    1 1367     100           966 Sep 22  2014 xcache.class.php

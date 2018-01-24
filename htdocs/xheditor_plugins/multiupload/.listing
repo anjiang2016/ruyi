@@ -1,0 +1,7 @@
+drwxr-xr-x    4 1367     100          4096 Dec 20  2015 .
+drwxr-xr-x    3 1367     100          4096 Dec 20  2015 ..
+drwxr-xr-x    2 1367     100          4096 Dec 20  2015 img
+-rw-r--r--    1 1367     100          1392 Dec 20  2015 multiupload.css
+-rw-r--r--    1 1367     100          5042 Dec 20  2015 multiupload.html
+-rw-r--r--    1 1367     100          3808 Dec 20  2015 multiupload.js
+drwxr-xr-x    2 1367     100          4096 Dec 20  2015 swfupload

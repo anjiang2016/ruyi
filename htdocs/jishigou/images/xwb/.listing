@@ -1,0 +1,15 @@
+drwxr-xr-x    4 1367     100          4096 Mar 31  2017 .
+drwxr-xr-x   27 1367     100          4096 Mar 31  2017 ..
+drwxr-xr-x    2 1367     100          4096 Mar 31  2017 bgimg
+-rw-r--r--    1 1367     100          6130 Sep 22  2014 boot.js
+-rw-r--r--    1 1367     100             0 Sep 22  2014 dlg.js
+-rw-r--r--    1 1367     100         56993 Sep 22  2014 lang_zh.js
+-rw-r--r--    1 1367     100         10236 Sep 22  2014 n_share.css
+-rw-r--r--    1 1367     100         14159 Sep 22  2014 public.css
+-rw-r--r--    1 1367     100         37910 Sep 22  2014 share.js
+-rw-r--r--    1 1367     100          3654 Sep 22  2014 shareSucess.js
+drwxr-xr-x    2 1367     100          4096 Mar 31  2017 shareimg
+-rw-r--r--    1 1367     100          9648 Sep 22  2014 shareout.css
+-rw-r--r--    1 1367     100         30990 Sep 22  2014 xwb.js
+-rw-r--r--    1 1367     100          6499 Sep 22  2014 xwb_2.5.0.css
+-rw-r--r--    1 1367     100          6931 Sep 22  2014 xwb_base.css

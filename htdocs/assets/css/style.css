@@ -1,0 +1,193 @@
+﻿
+/* =============================================================
+   GENERAL STYLES
+ ============================================================ */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Nova Flat';
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.pad-top {
+    padding-top:30px;
+}
+.text-center {
+    text-align:center;
+}
+/*=====================================
+  HEADERS TOP STYLES 
+ ===================================*/
+
+.header-top {
+    color: #ADADAD;
+    text-align: center;
+    padding: 10px 30px 10px 30px;
+}
+
+    .header-top span {
+        color: #fff;
+        font-weight:900;
+    }
+
+        .header-top span > i {
+            padding-left: 10px;
+        }
+		.copyrights{
+	text-indent:-9999px;
+	height:0;
+	line-height:0;
+	font-size:0;
+	overflow:hidden;
+}
+/*=====================================
+  HOME STYLES 
+   ===================================*/
+#home {
+    background: url(../img/1.jpg) no-repeat center center;
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+}
+
+    #home .overlay {
+            
+        min-height: 700px;
+    }
+
+    #home .history-div {
+        text-align: center;
+    }
+
+        #home .history-div h1 {
+            padding-top: 60px;
+        }
+
+    #home p {
+        padding: 20px 20px 20px 0px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+   
+.facts span{
+    display: block;
+     font-size: 20px;
+      margin-bottom: 30px;
+}
+
+    .facts span > i {
+       
+       
+        padding-right:10px;
+    }
+
+/*=====================================
+  BUY STYLES 
+   ===================================*/
+#buy {
+    padding-bottom:70px;
+}
+ #buy h1 {
+            padding-top: 60px;
+        }
+#buy p {
+    padding: 20px 20px 20px 0px;
+    line-height: 30px;
+    font-size: 14px;
+    min-height:130px;
+}
+#buy .chart {
+    text-align: center; 
+    padding: 50px 5px 50px 5px;
+}
+
+    #buy i {
+         margin-top:15px;
+          
+    }
+    #buy span {
+        display:block;
+    }
+  /*=====================================
+  FOOTER STYLES 
+   ===================================*/
+#footer-sec {
+    color: #fff; 
+     padding: 15px 30px 15px 30px; 
+     text-align: right;
+}
+
+ /*=====================================
+  THEME SWITCHER STYLES 
+   ===================================*/
+.switcher {
+    width:50px;
+    padding:10px;
+    position:fixed;
+    z-index:2000;
+    top:90px;
+    right:0;
+    background-color:#fff;
+    -webkit-transition:all .4s ease-in-out;
+    -moz-transition:all .4s ease-in-out;
+    -ms-transition:all .4s ease-in-out;
+    -o-transition:all .4s ease-in-out;
+    transition:all .4s ease-in-out;
+	color:#000000;
+}
+   
+.switcher #switch-panel {
+    position:absolute;
+    right:-34px;
+    top:15px;
+    width:34px;
+    height:38px;
+    z-index:1990;
+    display:block;
+    background-color:#fff;
+	margin-left:0;
+    cursor: pointer;
+}
+.switcher #switch-panel i {
+    font-size: 20px;
+    line-height: 40px;
+    padding-left:5px;
+    color:#000;
+}
+.switcher .colors-list {
+    margin:0;
+    padding:0;
+}
+.switcher .colors-list li {
+    float:left;
+    display:block;
+    margin-bottom:2px;
+    margin-right:6px;
+}
+.switcher .colors-list li a {
+    display:inline-block;
+    width:24px;
+    height:24px;
+    cursor: pointer;
+}
+.switcher .colors-list a.black {
+    background-color:#000;
+}
+.switcher .colors-list a.blue {
+    background-color:rgba(70, 84, 158, 0.95);
+}
+.switcher .colors-list a.green {
+    background-color:rgba(0, 139, 123, 0.95);
+}
+.switcher .colors-list a.red {
+    background-color:rgba(143, 4, 32, 1);
+}
+
+

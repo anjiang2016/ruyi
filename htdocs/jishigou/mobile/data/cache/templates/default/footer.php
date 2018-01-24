@@ -1,0 +1,2 @@
+<?php /* 2017-03-31 in jishigou invalid request template */ if(!defined("IN_JISHIGOU")) exit("invalid request"); hookscriptoutput(); ?>
+<?php if(!$this->Config['is_mobile_client']) { ?> </div> <?php } ?> </div><?php echo $GLOBALS['_J']['config']['tongji']; ?></body> </html>

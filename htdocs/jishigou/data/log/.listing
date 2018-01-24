@@ -1,0 +1,5 @@
+drwxr-xr-x    2 1367     100          4096 Apr 01  2017 .
+drwxr-xr-x    8 1367     100          4096 Mar 31  2017 ..
+-rw-r--r--    1 1367     100             0 Sep 22  2014 index.html
+-rw-r--r--    1 1367     100           605 Mar 31  2017 mysql_query_error-2017-03.log.php
+-rw-r--r--    1 1367     100        115560 Apr 01  2017 mysql_query_error-2017-04.log.php

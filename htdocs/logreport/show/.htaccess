@@ -1,0 +1,6 @@
+AuthType Basic
+AuthName "logreport"
+AuthUserFile /usr/home/hxu0030865/auth/o4j5t8c1f5q9q9m4e0d6
+<Limit GET POST PUT>
+require user  hxu0030865
+</Limit>

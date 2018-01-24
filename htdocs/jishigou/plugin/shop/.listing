@@ -1,0 +1,10 @@
+drwxr-xr-x    3 1367     100          4096 Mar 31  2017 .
+drwxr-xr-x    4 1367     100          4096 Mar 31  2017 ..
+-rw-r--r--    1 1367     100          1443 Sep 22  2014 admincp.inc.php
+-rw-r--r--    1 1367     100          4888 Sep 22  2014 hook.class.php
+-rw-r--r--    1 1367     100          1044 Sep 22  2014 install.php
+-rw-r--r--    1 1367     100          3363 Sep 22  2014 jishigou_plugin_shop.xml
+-rw-r--r--    1 1367     100          2713 Sep 22  2014 logo.png
+-rw-r--r--    1 1367     100          6005 Sep 22  2014 shop.mod.php
+drwxr-xr-x    4 1367     100          4096 Mar 31  2017 template
+-rw-r--r--    1 1367     100           369 Sep 22  2014 uninstall.php

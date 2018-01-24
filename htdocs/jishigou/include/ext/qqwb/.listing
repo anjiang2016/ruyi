@@ -1,0 +1,6 @@
+drwxr-xr-x    2 1367     100          4096 Mar 31  2017 .
+drwxr-xr-x    6 1367     100          4096 Mar 31  2017 ..
+-rw-r--r--    1 1367     100          8788 Sep 22  2014 oauth.php
+-rw-r--r--    1 1367     100         13599 Sep 22  2014 qqoauth.php
+-rw-r--r--    1 1367     100          7469 Sep 22  2014 qqwbOAuth.class.php
+-rw-r--r--    1 1367     100          4591 Sep 22  2014 to_qqwb.inc.php

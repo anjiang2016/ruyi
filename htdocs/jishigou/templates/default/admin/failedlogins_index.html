@@ -1,0 +1,78 @@
+<!--{template admin/header}-->
+
+<form method="post" action="admin.php?mod=failedlogins&code=modify">
+	<table cellspacing="1" cellpadding="4" width="100%" align="center" class="tableborder">
+		<tr class="header">
+			<td colspan="2">登录错误的用户IP地址限制</td>
+		</tr>
+		<tr class="altbg1">
+			<td width="45%"><b>允许登录错误次数？</b><br>
+			<span class="smalltxt">默认为15次，表示登录错误次数超过15次的IP地址将被禁止登录</span></td>
+			<td><input type="text" name="limit" size="6" value="{$failedlogins[limit]}" />次</td>
+		</tr>
+		<tr class="altbg2">
+			<td width="45%"><b>禁止再登录的时间？</b><br>
+			  <span class="smalltxt">默认为15分钟，表示被禁止的IP地址在15分钟内不能再次登录</span>
+			</td>
+			<td><input type="text" name="time" size="6" value="{$failedlogins[time]}" />分钟</td>
+		</tr>
+		<tr class="altbg1">
+			<td width="45%"><b>用户登录IP白名单：</b><br>
+			<span class="smalltxt">一行一个，留空则关闭白名单功能；<br />
+				此处设置的IP地址不受上面设定的登录IP限制，可以频繁的登录
+			</span>
+			</td>
+			<td><textarea cols="48" rows="4" name="white_list">{$failedlogins_white_list}</textarea></td>
+		</tr>
+    </table>
+	<br><center><input type="submit" class="button" name="settingsubmit" value="提 交"></center><br>
+</form>
+<form method="post" action="admin.php?mod=failedlogins&code=index">
+	<table cellspacing="1" cellpadding="4" width="100%" align="center" class="tableborder">
+		<tr class="header">
+			<td colspan="2">登录错误的IP地址列表</td>
+		</tr>
+		<tr class="altbg2">
+			<td width="45%"><b>IP地址？</b><br>
+			  <span class="smalltxt"></span>
+			</td>
+			<td><input type="text" name="ip" value="{$ip}" size="48" /></td>
+		</tr>
+		<tr class="altbg1">
+			<td width="45%"><b>排序</b><br>
+			<span class="smalltxt"></span></td>
+			<td><select name="order">
+				<option value="">默认</option>
+				<option value="ip"{if 'ip'==$order} selected="selected" {/if}>IP地址</option>
+				<option value="count"{if 'count'==$order} selected="selected" {/if}>错误次数</option>
+				<option value="lastupdate"{if 'lastupdate'==$order} selected="selected" {/if}>登陆时间</option>
+			</select></td>
+		</tr>
+    </table>
+	<br><center><input type="submit" class="button" name="settingsubmit" value="搜索"> &nbsp; 
+		<a href="admin.php?mod=failedlogins&code=index">查看全部</a> &nbsp; 
+		<a href="admin.php?mod=failedlogins&code=clean" title="清空所有登录错误的IP" onclick="return confirm('确认清空所有登录错误的IP？');">清空所有</a> &nbsp; </center><br>
+	<table cellspacing="1" cellpadding="4" width="100%" align="center" class="tableborder">
+		<tr class="header">
+			<td>登录错误的IP地址</td>
+			<td>错误登录次数</td>
+			<td>最后登录时间</td>
+			<td>&nbsp;</td>
+		</tr>
+		<!--{loop $rets[list] $v}-->
+		<!--{eval $altbgid=(++$__rlk % 2 ? 1 : 2);}-->
+		<tr class="altbg{$altbgid}">
+			<td>{$v[ip]}</td>
+			<td>{$v[count]}</td>
+			<td>{eval echo my_date_format($v[lastupdate]);}</td>
+			<td><a href="admin.php?mod=failedlogins&code=delete&ip={$v[ip]}">删除</a></td>
+		</tr>
+		<!--{/loop}-->
+		<!--{if $rets[page][html]}-->
+		<tr>
+			<td colspan="4">{$rets[page][html]}</td>
+		</tr>
+		<!--{/if}-->
+	</table>
+</form>
+<br>
